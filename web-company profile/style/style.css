@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 2px;
+  color: #e4bad4;
+}
+
+/* css for header & navigation */
+nav {
+  background-color: #caf7e3;
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header-left {
+  margin-left: 20px;
+  letter-spacing: 2.5px;
+}
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar-links li {
+  list-style: none;
+}
+.navbar-links li a {
+  display: block;
+  padding: 0px 20px 0px 10px;
+  text-decoration: none;
+}
+.navbar-links li:hover {
+  background-color: #f8eded;
+}
+
+/* css for content*/
+
+#content {
+  padding: 80px 80px 40px 80px;
+  overflow: auto;
+}
+.boundary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+h1 {
+  font-size: 8.75rem;
+}
+
+h2 {
+  font-size: 3.75rem;
+}
+
+/*css for lesson*/
+
+#lesson,
+#program,
+#article {
+  /* height: 500px; */
+  margin-top: 100px;
+}
+h3 {
+  font-size: 28px;
+  border-bottom: 2px solid #dee7ec;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.pic {
+  margin-right: 40px;
+  text-align: center;
+}
+
+#main-content p {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+/* css for footer */
+
+footer {
+  background-color: #caf7e3;
+  text-align: center;
+}
+
+/* css for member ID */
+
+.card {
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 20px;
+}
+.photos {
+  width: 500px;
+  height: 500px;
+  margin: 25px auto;
+
+  border-radius: 50%;
+  background-image: url(img/doohanas.jpg);
+  animation: slider 25s infinite linear;
+}
+.photos:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+@keyframes slider {
+  0% {
+    background-image: url(img/doohanas.jpg);
+  }
+  20% {
+    background-image: url(img/member2.jpg);
+  }
+  40% {
+    background-image: url(img/member3.jpg);
+  }
+  60% {
+    background-image: url(img/member4.jpg);
+  }
+  100% {
+    background-image: url(img/member5.jpg);
+  }
+}
